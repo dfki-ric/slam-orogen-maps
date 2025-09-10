@@ -29,6 +29,7 @@ namespace maps
         virtual ~MLSMapLoader();
 
         bool configureHook();
+        virtual void updateHook();
     };
 }
 
