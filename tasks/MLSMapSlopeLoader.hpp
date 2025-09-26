@@ -10,9 +10,10 @@ namespace maps
     friend class MLSMapSlopeLoaderBase;
 
     private:
-        maps::grid::MLSMapSloped mMap;
+        
 
     protected:
+        maps::grid::MLSMapSloped mMap;
         void createMLS(const pcl::PointCloud<pcl::PointXYZ>& pc,
                              maps::grid::Vector2ui gridSize,
                              maps::grid::Vector2d cellSize,
@@ -22,6 +23,7 @@ namespace maps
     public:
         MLSMapSlopeLoader(std::string const& name = "maps::MLSMapSlopeLoader", TaskCore::TaskState initial_state = Stopped);
         ~MLSMapSlopeLoader();
+        
     };
 }
 

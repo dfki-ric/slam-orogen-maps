@@ -94,3 +94,7 @@ bool MLSMapLoader::configureHook()
     mMapLoaded = true;
     return true; 
 }
+void MLSMapLoader::updateHook()
+{
+
+}
